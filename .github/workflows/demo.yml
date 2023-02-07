@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World 🌎"
+
+      - name: Checkout code from branch
+        uses: actions/checkout@v3
+
       - name: List files in workspace
         run: |
           ls ${{ github.workspace }}
