@@ -21,7 +21,10 @@ jobs:
         run: |
           python --version
 
+      - name: Install pytest
+        run: |
+          pip install pytest
+
       - name: Run pytest
         run: |
           pytest
-          
