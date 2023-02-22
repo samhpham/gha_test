@@ -17,14 +17,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run python
+      - name: Install pipenv
         run: |
-          python --version
+          pip install --upgrade pipenv wheel
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
-          pip install -r requirements.txt
+          pipenv install --ignore-pipfile
 
-      - name: Run pytest
+      - name: Run pytest via pipenv
         run: |
-          pytest
+          pipenv run test
