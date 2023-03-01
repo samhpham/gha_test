@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 numpy = "*"
 biopython = "*"
+pandas = "*"
 
 [dev-packages]
 pytest = "==7.2.0"
