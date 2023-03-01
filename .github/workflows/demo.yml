@@ -23,7 +23,7 @@ jobs:
 
       - name: Install deps
         run: |
-          pipenv install --ignore-pipfile
+          pipenv install --dev --deploy
 
       - name: Run pytest via pipenv
         run: |
